@@ -1,0 +1,120 @@
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+
+body{
+  font-family: "Montserrat";
+}
+
+.container-fluid{
+  padding: 2% 15%;
+}
+
+h1{
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2{
+  font-family: "Montserrat";                         /* Testimonials area font*/
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h3{
+  font-family: "Montserrat-bold";
+  font-size: 1.5rem;
+  }
+
+p{
+  color: #8f8f8f;
+}
+
+/* Nav bar*/
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+  font-family: "Nunito";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-item{
+  padding: 0 1rem;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+.download-button{
+margin: 5% 3% 5% 0;
+}
+
+/* Title image*/
+
+.title-image {
+ width: 60%;    /*60% of the parent column - (Refering to - <div class= "col-lg-6">)*/
+ transform: rotate(20deg);  -25deg for left */
+}
+
+#features{
+padding: 10% 15%;
+}
+
+.features-box{
+text-align: center;
+}
+
+.icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;                                              /* To put the hover color on icons*/
+}
+                                                                          /* Testimonials */
+#testimonials{
+color: #fff;
+text-align: center;
+background-color: #ef8172;
+}
+
+.carousel-item{
+  padding: 10% 15%;   /* To push the slide button out */
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;    /* this is for make the image to round shape */
+  margin: 20px;
+}
+
+#press{
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section*/
+
+#pricing{
+  text-align: center;
+  padding: 5% 150px;
+  }
+
+.pricing-column{
+  padding: 7% 5%;
+}
