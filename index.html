@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+<!-- Googlr font REferance -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Qwitcher+Grypen:wght@700&family=Silkscreen&display=swap" rel="stylesheet">
+
+<!-- Font wesome Icon REferance -->
+<script src="https://kit.fontawesome.com/ce87dcdeef.js" crossorigin="anonymous"></script>
+
+<!-- Bootstrap REferance -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<!-- Java script REferance -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<!-- Stylesheet REferance -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+                                                                             <!-- Nav Bar menus-->
+  <section id="title">
+    <div class="container-fluid">                                        <!-- Container padding -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">tindog</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>                                       <!-- Sourced by Bootstrap -->
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">                    <!-- ID name should be same as data-bs-target-->
+        <ul class= "navbar-nav ms-auto">                                                      <!--ms margin + start-->
+        <li class= "navbar-item">
+        <a class= "nav-link" href="#footer"> Contact </a>   <!--#footer is id name of footer section-->
+        </li>
+        <li class= "navbar-item">
+        <a class= "nav-link" href="#pricing"> Pricing </a> <!--#pricing is id name of pricing section-->
+        </li>
+        <li class= "navbar-item">
+        <a class= "nav-link" href="#cta"> Download </a>    <!--#cta is id name of Download section-->
+        </li>
+        </li>
+        </ul>
+        </div>
+        </nav>
+
+    <!-- Title -->
+
+    <div class= "row">
+      <div class="col-lg-6 ">
+      <h1 class= "big-heading">Meet new and interesting dogs nearby.</h1>
+
+      <button type="button" class= "btn btn-dark btn-lg download-button"> <i class="fa-brands fa-apple"></i> Download</button> <!-- fa = Font Awesome site -->
+        <button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fa-brands fa-google-play"></i> Download</button>
+      </div>
+
+      <div class= "col-lg-6">
+        <img class= "title-image" src="images/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+<div class="row">
+<div class="features-box col-lg-4">
+  <i class="icon fa-solid fa-circle-check fa-4x"></i>   <!-- Adding "icon" in the all icon classes to adress the icons in css style sheet-->
+     <h3 class="feature-text">Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+</div>
+
+<div class="features-box col-lg-4">
+  <i class="icon fa-solid fa-bullseye fa-4x"></i>      <!-- Adding "icon" in the all icon classes to adress the icons in css style sheet-->
+    <h3 class="feature-text">Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+    </div>
+
+<div class="features-box col-lg-4">
+  <i class="icon fa-solid fa-heart fa-4x"></i>        <!-- Adding "icon" in the all icon classes to adress the icons in css style sheet-->
+    <h3 class="feature-text">Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+    </div>
+</div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+  <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">   <!-- Div "id" name and anchor tag "href" name should be the same. (Slides - Hover) -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">   <!-- active keyword should be there in the first div-->
+      <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img class= "testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+      <em>Pebbles, New York</em>
+    </div>
+
+    <div class="carousel-item">
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+       <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+       <em>Beverly, Illinois</em>
+    </div>
+    </div>
+
+  <a class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev"> <!-- Div "id" name and anchor tag "href" name should be the same. (Slides - Hover) -->
+    <span class="carousel-control-prev-icon"></span>
+
+  </a>
+  <a class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  </section>
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">             <!-- To select all lines and put the same value for all lines. Alt + drag  -->
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+  <h2 class= "section-heading">A Plan for Every Dog's Needs</h2>
+  <p>Simple and affordable price plans for your and your dog.</p>
+
+<div class="row">
+<div class="pricing-column col-lg-4 col-sm-6">
+<div class="card">    <!-- "card" Bootstrap keyword for pricing card -->
+<div class="card-header">
+  <h3 class="price-heading">Chihuahua</h3>
+</div>
+<div class="card-body">
+  <h2 class= "price-text">Free</h2>
+  <p>5 Matches Per Day</p>
+  <p>10 Messages Per Day</p>
+  <p>Unlimited App Usage</p>
+  <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+</div>
+</div>
+</div>
+<div class="pricing-column col-lg-4 col-sm-6">
+<div class="card"> <!-- "card" Bootstrap keyword for pricing card -->
+<div class="card-header">
+  <h3 class="price-heading">Labrador</h3>
+</div>
+<div class="card-body">
+  <h2 class= "price-text">$49 / mo</h2>
+  <p>Unlimited Matches</p>
+  <p>Unlimited Messages</p>
+  <p>Unlimited App Usage</p>
+  <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+</div>
+</div>
+</div>
+<div class="pricing-column col-lg-4 col-sm-6">
+<div class="card"> <!-- "card" Bootstrap keyword for pricing card -->
+<div class="card-header">
+  <h3 class="price-heading">Mastiff</h3>
+</div>
+<div class="card-body">
+  <h2 class= "price-text">$99 / mo</h2>
+  <p>Pirority Listing</p>
+  <p>Unlimited Matches</p>
+  <p>Unlimited Messages</p>
+  <p>Unlimited App Usage</p>
+  <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <h3 class= "cta" >Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class= "btn btn-dark btn-lg download-button"> <i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class= "btn btn-outline-light btn-lg download-button-"> <i class="fa-brands fa-google-play"></i> Download</button>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+   <i class="footer-icon fa-brands fa-twitter"></i>
+   <i class="footer-icon fa-brands fa-facebook-f"></i>
+   <i class="footer-icon fa-brands fa-instagram"></i>
+    <p>© Copyright TinDog</p>
+  </footer>
+</body>
+</html>
