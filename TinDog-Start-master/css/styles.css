@@ -181,8 +181,9 @@ padding: 3% 2%;
     transform: rotate(0);
     width: 50%;
   }
-  .title-download-button{
+    .title-download-button{
     width: 50%;
+    text-align: center;
   }
   .testimonial-text {
     font-weight: bold;
