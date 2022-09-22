@@ -1,120 +1,195 @@
-#title {
-  background-color: #ff4c68;
-  color: white;
-}
-
-body{
+body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-.container-fluid{
-  padding: 2% 15%;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
 }
 
-h1{
-  font-family: "Montserrat";
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-h2{
-  font-family: "Montserrat";                         /* Testimonials area font*/
-  font-weight: bold;
-  font-size: 2.5rem;
-  line-height: 1.5;
-}
-
-h3{
-  font-family: "Montserrat-bold";
-  font-size: 1.5rem;
-  }
-
-p{
+p {
   color: #8f8f8f;
 }
 
-/* Nav bar*/
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
 
-.navbar{
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+padding: 2% 15%;
+  /*to extent the title area*/
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
   padding: 0 0 4.5rem;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: "Nunito";
   font-size: 2rem;
   font-weight: bold;
 }
 
-.navbar-item{
-  padding: 0 1rem;
+.navbar-item {
+  padding: 0 18px;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.2rem;
+  }
+
+/* Buttons */
+.title-download-button{
+  text-align: left;
+  width: 20%;
+  padding-top: 30px;
 }
 
-.download-button{
-margin: 5% 3% 5% 0;
-}
+/* Title Section */
 
-/* Title image*/
+#title {
+  background-color: #ff4c68;
+  color: white;
+  padding-bottom: 50px;
+  }
 
 .title-image {
- width: 60%;    /*60% of the parent column - (Refering to - <div class= "col-lg-6">)*/
- transform: rotate(20deg);  -25deg for left */
+  width: 21%;  /*60% of the parent column - (Refering to - <div class= "col-lg-6">)*/
+  left: 57%;
+  transform: rotate(20deg);   /*-25deg for left */
+  position: absolute; /* This position elemet used to put the z-index element*/
+  right: 30%;
 }
 
-#features{
-padding: 10% 15%;
+
+/* Features Section */
+
+#features {
+  padding: 5%;
+  position: relative; /* This position elemet used to put the z-index element*/
+  z-index: 1;  /* This z-index element used to bring this section to top on the title section*/
 }
 
-.features-box{
-text-align: center;
+.feature-text {
+  font-size: 1.5rem;
 }
 
-.icon{
+.icon {
   color: #ef8172;
   margin-bottom: 1rem;
 }
 
 .icon:hover {
-  color: #ff4c68;                                              /* To put the hover color on icons*/
+  color: #ff4c68;  /* To put the hover color on icons*/
 }
-                                                                          /* Testimonials */
-#testimonials{
-color: #fff;
-text-align: center;
+
+/* Testimonials */
+
+#testimonials {
 background-color: #ef8172;
 }
 
-.carousel-item{
-  padding: 10% 15%;   /* To push the slide button out */
+.testimonial-text {
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
-.testimonial-image{
+.testimonial-image {
   width: 10%;
-  border-radius: 100%;    /* this is for make the image to round shape */
+  border-radius: 100%;     /* this is for make the image to round shape */
   margin: 20px;
 }
 
-#press{
-  text-align: center;
+.carousel-item {
+  padding: 7% 15% 4% 15%;   /* To push the slide button out */
+}
+
+#press {
   background-color: #ef8172;
   padding-bottom: 3%;
 }
 
-.press-logo{
+.press-logo {
   width: 15%;
   margin: 20px 20px 50px;
 }
 
 /* Pricing Section*/
 
-#pricing{
-  text-align: center;
-  padding: 5% 150px;
+#pricing {
+  padding: 50px;
+}
+
+.pricing-column {
+padding: 3% 2%;
+}
+
+.price-text {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+/* Footer Section*/ /* CTA Section */
+
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  padding: 50px 0px;
+}
+
+.cta {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 30px;
   }
 
-.pricing-column{
-  padding: 7% 5%;
+#footer .footer-icon {
+  padding: 20px;
+  }
+
+@media (max-width: 1028px) {
+
+  #title, .big-heading {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+  }
+  .title-download-button{
+    width: 50%;
+  }
+  .testimonial-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+.section-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 }
