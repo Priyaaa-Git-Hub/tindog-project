@@ -1,56 +1,203 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>Priya</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
-</head>
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
 
-<body>
+p {
+  color: #8f8f8f;
+}
 
-  <div class="Top">
-    <h3 class="Name"> I'm Priya </h3>
-    <p>
-    <div class="developer">
-      Web developer </p>
-      <img class="Cloud" src="Images/cloud.png" alt="Cloud">
-      <img class="Mountain" src="Images/mountain.png" alt="Mountain">
-    </div>
-  </div>
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
 
-  <div class="Introduction">
-    <img class="Profile-Picture" src="Images/Profile.png" alt="Priya Profile Picture">
-    <p> A non-technical person who is always eager to learn new things, which is what led me here to do this. </p>
-  </div>
-  <hr>
-  <div class="Skills">
-    <h2>Skills</h2>
-    <div class="Skill-only">
-      <img class="programming-icon" src="Images/programming.png" alt="programming icon">
-      <p> learner from <strong> '0' </strong> </p>
-      <p class="skill-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div>
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
 
-    <div class="Skill-only">
-      <img class="chillie-img" src="Images/chillies.png" alt="chillies icon">
-      <h2> Chillie Challange </h2>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div>
-  </div>
-  <hr>
-  <div class="Footer">
-    <h3 class=Get-In-Touch> Get In Touch </h3>
-    <a class="btn" href="mohanapriya9993@gmail.com"> Contact Me </a>
+/* Containers */
+.container-fluid {
+padding: 2% 15%;
+  /*to extent the title area*/
+}
 
-    <div class="Contact">
-      <h4 class="Instagram"> <a href="https://www.instagram.com/priya_pri_view/">Instagram</a> </h4>
-      <h4 class="Mail"> <a href="mohanapriya9993@gmail.com">Mail</a> </h4>
-    </div>
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
 
-  </div>
+.white-section {
+  background-color: #fff;
+}
 
-</body>
+/* Navigation Bar */
 
-</html>
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Nunito";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  }
+
+/* Buttons */
+.title-download-button{
+  text-align: left;
+  width: 20%;
+  padding-top: 30px;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #ff4c68;
+  color: white;
+  padding-bottom: 50px;
+  }
+
+.title-image {
+  width: 21%;  /*60% of the parent column - (Refering to - <div class= "col-lg-6">)*/
+  left: 57%;
+  transform: rotate(20deg);   /*-25deg for left */
+  position: absolute; /* This position elemet used to put the z-index element*/
+  right: 30%;
+}
+
+
+/* Features Section */
+
+#features {
+  padding: 5%;
+  position: relative; /* This position elemet used to put the z-index element*/
+  z-index: 1;  /* This z-index element used to bring this section to top on the title section*/
+}
+
+.feature-text {
+  font-size: 1.5rem;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;  /* To put the hover color on icons*/
+}
+
+/* Testimonials */
+
+#testimonials {
+background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;     /* this is for make the image to round shape */
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15% 4% 15%;   /* To push the slide button out */
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section*/
+
+#pricing {
+  padding: 50px;
+}
+
+.pricing-column {
+padding: 3% 2%;
+}
+
+.price-text {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+/* Footer Section*/ /* CTA Section */
+
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  padding: 50px 0px;
+}
+
+.cta {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+  }
+
+#footer .footer-icon {
+  padding: 10px;
+    }
+
+.footer-icon{
+  color:#2B4865;
+}
+
+@media (max-width: 1028px) {
+
+  #title, .big-heading {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+  }
+  .title-download-button{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .testimonial-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+.section-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+}
+
