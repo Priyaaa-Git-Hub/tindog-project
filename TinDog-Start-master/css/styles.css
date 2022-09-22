@@ -184,7 +184,9 @@ padding: 3% 2%;
     .title-download-button{
     width: 50%;
     text-align: center;
+    margin: auto;
   }
+  
   .testimonial-text {
     font-weight: bold;
     font-size: 1.3rem;
