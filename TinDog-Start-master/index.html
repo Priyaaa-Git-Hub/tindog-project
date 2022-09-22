@@ -20,7 +20,7 @@
 </head>
 <body>
                                                                              <!-- Nav Bar menus-->
-  <section id="title">
+ <section class="colored-section" id="title">
     <div class="container-fluid">                                        <!-- Container padding -->
 
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -33,13 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">                    <!-- ID name should be same as data-bs-target-->
         <ul class= "navbar-nav ms-auto">                                                      <!--ms margin + start-->
         <li class= "navbar-item">
-        <a class= "nav-link" href=""> Contact </a>
+        <a class= "nav-link" href="#footer"> Contact </a>   <!--#footer is id name of footer section-->
         </li>
         <li class= "navbar-item">
-        <a class= "nav-link" href=""> About Me </a>
+        <a class= "nav-link" href="#pricing"> Pricing </a> <!--#pricing is id name of pricing section-->
         </li>
         <li class= "navbar-item">
-        <a class= "nav-link" href=""> Project </a>
+        <a class= "nav-link" href="#cta"> Download </a>    <!--#cta is id name of Download section-->
         </li>
         </ul>
         </div>
@@ -49,47 +49,53 @@
 
     <div class= "row">
       <div class="col-lg-6 ">
-      <h1>Meet new and interesting dogs nearby.</h1>
+      <h1 class= "big-heading">Meet new and interesting dogs nearby.</h1>
+     </div>
+     <div class= "col-lg-6">
+     <img class= "title-image" src="images/iphone6.png" alt="iphone-mockup">
+     </div>
+     </div>
 
-      <button type="button" class= "btn btn-dark btn-lg download-button"> <i class="fa-brands fa-apple"></i> Download</button> <!-- fa = Font Awesome site -->
-        <button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fa-brands fa-google-play"></i> Download</button>
+      <div class="row">
+        <div class="col-lg-2 title-download-button">
+      <button type="button" class= "btn btn-dark btn-lg "> <i class="fa-brands fa-apple"></i> Download</button> <!-- fa = Font Awesome site -->
+          </div>
+          <div class="col-lg-2 title-download-button">
+        <button type="button" class="btn btn-outline-light btn-lg"> <i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
       </div>
-
-      <div class= "col-lg-6">
-        <img class= "title-image" src="images/iphone6.png" alt="iphone-mockup">
-      </div>
-    </div>
-  </div>
   </section>
 
   <!-- Features -->
 
-  <section id="features">
+<section class="white-section" id="features">
+  <div class="container-fluid">
 <div class="row">
 <div class="features-box col-lg-4">
   <i class="icon fa-solid fa-circle-check fa-4x"></i>   <!-- Adding "icon" in the all icon classes to adress the icons in css style sheet-->
-     <h3>Easy to use.</h3>
+     <h3 class="feature-text">Easy to use.</h3>
     <p>So easy to use, even your dog could do it.</p>
 </div>
 
 <div class="features-box col-lg-4">
   <i class="icon fa-solid fa-bullseye fa-4x"></i>      <!-- Adding "icon" in the all icon classes to adress the icons in css style sheet-->
-    <h3>Elite Clientele</h3>
+    <h3 class="feature-text">Elite Clientele</h3>
     <p>We have all the dogs, the greatest dogs.</p>
     </div>
 
 <div class="features-box col-lg-4">
   <i class="icon fa-solid fa-heart fa-4x"></i>        <!-- Adding "icon" in the all icon classes to adress the icons in css style sheet-->
-    <h3>Guaranteed to work.</h3>
+    <h3 class="feature-text">Guaranteed to work.</h3>
     <p>Find the love of your dog's life or your money back.</p>
     </div>
+</div>
 </div>
   </section>
 
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
 
   <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">   <!-- Div "id" name and anchor tag "href" name should be the same. (Slides - Hover) -->
   <div class="carousel-inner">
@@ -120,25 +126,26 @@
   <!-- Press -->
 
   <section id="press">
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">             <!-- To select all lines and put the same value for all lines. Alt + drag  -->
+    <img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">             <!-- To select all lines and put the same value for all lines. Alt + drag  -->
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
   </section>
 
   <!-- Pricing -->
-  <section id="pricing">
-  <h2>A Plan for Every Dog's Needs</h2>
+
+<section class="white-section" id="pricing">
+  <h2 class= "section-heading">A Plan for Every Dog's Needs</h2>
   <p>Simple and affordable price plans for your and your dog.</p>
 
 <div class="row">
-<div class="pricing-column col-lg-4 col-sm-6">
+<div class="pricing-column col-lg-4 col-md-6">
 <div class="card">    <!-- "card" Bootstrap keyword for pricing card -->
 <div class="card-header">
   <h3>Chihuahua</h3>
 </div>
 <div class="card-body">
-  <h2>Free</h2>
+  <h2 class= "price-text">Free</h2>
   <p>5 Matches Per Day</p>
   <p>10 Messages Per Day</p>
   <p>Unlimited App Usage</p>
@@ -152,7 +159,7 @@
   <h3>Labrador</h3>
 </div>
 <div class="card-body">
-  <h2>$49 / mo</h2>
+  <h2 class= "price-text">$49 / mo</h2>
   <p>Unlimited Matches</p>
   <p>Unlimited Messages</p>
   <p>Unlimited App Usage</p>
@@ -166,7 +173,7 @@
   <h3>Mastiff</h3>
 </div>
 <div class="card-body">
-  <h2>$99 / mo</h2>
+  <h2 class= "price-text">$99 / mo</h2>
   <p>Pirority Listing</p>
   <p>Unlimited Matches</p>
   <p>Unlimited Messages</p>
@@ -176,28 +183,27 @@
 </div>
 </div>
 </div>
-
 </section>
-
 
   <!-- Call to Action -->
 
-  <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+    <h3 class= "cta" >Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class= "btn btn-dark btn-lg download-button"> <i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class= "btn btn-outline-light btn-lg download-button-"> <i class="fa-brands fa-google-play"></i> Download</button>
+    </div>
   </section>
-
 
   <!-- Footer -->
 
-  <footer id="footer">
-
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+   <i class="footer-icon fa-brands fa-twitter"></i>
+   <i class="footer-icon fa-brands fa-facebook-f"></i>
+   <i class="footer-icon fa-brands fa-instagram"></i>
     <p>© Copyright TinDog</p>
-
+      </div>
   </footer>
 </body>
-
 </html>
